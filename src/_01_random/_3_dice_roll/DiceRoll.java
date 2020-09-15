@@ -29,7 +29,7 @@ public class DiceRoll {
 	public static void main(String[] args) {
 		new DiceRoll().run();
 	}
-	
+	Random ran = new Random();
 	public void run() {
 		try {
 			oneImg = new ImageIcon(getClass().getResource("dice 1.png"));
@@ -48,7 +48,7 @@ public class DiceRoll {
 		rollButton.addActionListener((e) -> {
 
 			// 1. Make randomChoice equal to a random number between 1 and 6
-			int randomChoice = 0;
+			int randomChoice = ran.nextInt(6);
 
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 0) {
