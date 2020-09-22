@@ -4,6 +4,8 @@
 package _01_random._3_dice_roll;
 
 import java.awt.Dimension;
+import java.util.Random;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -51,15 +53,15 @@ public class DiceRoll {
 			int randomChoice = ran.nextInt(6);
 
 			// 2. Fix the code below so that it displays the correct image
-			if (randomChoice == 0) {
+			if (randomChoice == 1) {
 				label.setIcon(oneImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 2) {
 				label.setIcon(twoImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 3) {
 				label.setIcon(threeImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 4) {
 				label.setIcon(fourImg);
-			} else if (randomChoice == 0) {
+			} else if (randomChoice == 5) {
 				label.setIcon(fiveImg);
 			} else {
 				label.setIcon(sixImg);
